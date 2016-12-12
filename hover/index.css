@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+ul li {
+    background: linear-gradient(#90c, #8600B3);
+}
+
+ul li a {
+    display: block;
+    background: #666;
+    transition: background 0.5s;
+}
+
+ul li a:hover {
+    background:transparent;
+    transition: background 0s;
+}
+
+ul li:first-child a, ul li:first-child {
+    border-radius: 0px 20px 0px 0px;
+}
+
+ul li:last-child a, ul li:last-child {
+    border-radius: 0px 0px 20px 0px;
+}
+
