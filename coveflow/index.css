@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul {
+    width: 560px;
+    padding: 0;
+    margin: 200px 0 0 200px;
+    perspective : 500px;
+}
+
+ul li {
+    display: inline-block;
+    width: 100px;
+    height: 165px;
+    background: orangered;
+    transform: rotateY(45deg);
+    transition: all .5s;
+    position: relative;
+    z-index: 50;
+}
+
+ul li:nth-child(3) {
+    transform: rotateY(0deg) scale(1.2);
+    z-index: 55;
+}
+
+ul li:nth-child(3) ~ li {
+    transform: rotateY(-45deg);
+}
+
+ul li:hover ~ li {
+    transform: rotateY(-45deg);
+
+}
+
+ul li:hover, ul li:nth-child(3) ~ li:hover {
+    transform: rotateY(0deg) scale(1.2);
+}
+
+ul:hover li:not(:hover){
+    transform: rotateY(45deg);
+}
+
+ul:hover li:hover ~ li{
+    transform: rotateY(-45deg);
+}
+
+
+ul li:first-child,
+ul li;last-child {
+    z-index: 45;
+}
+
+ul li:hover,
+ul li:first-child:hover,
+ul li:nth-child(3) ~ li:hover {
+    z-index: 60;
+}
