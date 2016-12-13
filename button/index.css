@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+div {
+    width: 500px;
+    margin: 100px auto;
+    
+}
+
+button {
+    display: block;
+}
+
+
+.button1 {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+
+.button1:hover {
+    background-color:#3e8e41;
+}
+
+
+.button1:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+    box-shadow:0 5px #666;
+}
+
+
+
+.button2 {
+    margin: 150px 0 0 0;
+    border-radius: 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+.button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top :0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button2:hover span {
+   padding-right: 25px;
+}
+
+.button2:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
