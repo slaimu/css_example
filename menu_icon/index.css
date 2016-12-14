@@ -1,0 +1,27 @@
+.b1, .b2, .b3 {
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.container {
+    cursor:pointer;
+}
+
+.change .b1 {
+    transform:rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .b2 {
+    opacity: 0;
+}
+
+.change .b3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+
+
+
+}
